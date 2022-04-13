@@ -36,7 +36,7 @@ p {
 }
 
 .LetterAssignment input{
-    font-family: GalacticStandar, Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
     width: 25px;
 }
 
@@ -72,4 +72,9 @@ p {
 
 .galactic {
     font-family: GalacticStandar;
+}
+
+
+.galacticLetter input{
+    font-family: GalacticStandar, Courier, monospace;
 }

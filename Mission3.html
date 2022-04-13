@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Misión 3</title>
+</head>
+<body>
+    <h1>MISIÓN 3</h1>
+    <h2>"El código del MK-3512"</h2>
+
+
+    <p>
+        Hemos interceptado un mensaje de radio del enemigo. Ya lo hemos puesto a analizar en la
+        super computadora MK-3512, sin embargo su respuesta fue la siguiente
+        <center class="boxed">
+            <span>11111100110</span>
+        </center>
+        Su misión será descifrar el número resultante
+    </p>
+
+    
+    <form class="Answer">
+        <label>RESPUESTA:</label>
+        
+        <textarea rows="3" id="Answer"></textarea>
+        
+        <center>
+            <input type="button" value="AYUDA" onclick="HelpAlert()">
+            <input type="button" value="ENVIAR" onclick="SendAnswer()">
+            <input type="button" value="RESPUESTA" onclick="AnswerAlert()">
+        </center>
+    </form>
+</body>
+    <script src="./Mission3.js"></script>
+</html>
