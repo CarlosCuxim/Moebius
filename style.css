@@ -61,7 +61,15 @@ p {
     margin-right: 20px;
 }
 
-
+.Answer select{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    width: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
 
 /* Alfabeto galáctico estándar */
 @font-face {
