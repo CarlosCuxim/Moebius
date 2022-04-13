@@ -4,7 +4,7 @@ function SendAnswer(){
     Answer = Answer.toUpperCase()
     Answer = Answer.replace(/\s\s+/g, ' ')
     
-    if(Answer == "ZIRIÑ SIÑ DTFÑQPT RTWTF ÑTL EOYLQRHÑ") {
+    if(Answer == "LOS GATOS SON BONITOS") {
         alert("CORRECTO")
     } else {
         alert("INCORRECTO")
@@ -13,7 +13,7 @@ function SendAnswer(){
 
 
 function AnswerAlert(){
-    alert("La respuesta es: ZIRIÑ SIÑ DTFÑQPT RTWTF ÑTL EOYLQRHÑ")
+    alert("La respuesta es: LOS GATOS SON BONITOS")
 }
 
 function HelpAlert(){

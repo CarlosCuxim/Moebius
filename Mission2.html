@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <link rel="stylesheet" href="./style.css">
+
+
+    <title>Misión 2</title>
+</head>
+<body>
+    <h1>MISIÓN 2</h1>
+    <h2>"El mensaje del consejo galáctico"</h2>
+
+
+    <p>
+        Hemos recibido el siguiente mensaje del consejo galáctico:
+        <center class="boxed">
+            <span class="galactic">LOS GATOS SON BONITOS</span>
+        </center>
+    </p>
+
+    <p>Usando la siguiente asignación de símbolos, descifra el mensaje</p>
+    <form class="LetterAssignment">
+        <label>A <input type="text" readonly="readonly" value="A"></label>
+        <label>B <input type="text" readonly="readonly" value="B"></label>
+        <label>C <input type="text" readonly="readonly" value="C"></label>
+        <label>D <input type="text" readonly="readonly" value="D"></label>
+        <label>E <input type="text" readonly="readonly" value="E"></label>
+        <label>F <input type="text" readonly="readonly" value="F"></label>
+        <label>G <input type="text" readonly="readonly" value="G"></label>
+        <label>H <input type="text" readonly="readonly" value="H"></label>
+        <label>I <input type="text" readonly="readonly" value="I"></label>
+        <label>J <input type="text" readonly="readonly" value="J"></label>
+        <label>K <input type="text" readonly="readonly" value="K"></label>
+        <label>L <input type="text" readonly="readonly" value="L"></label>
+        <label>M <input type="text" readonly="readonly" value="M"></label>
+        <label>N <input type="text" readonly="readonly" value="N"></label>
+        <label>Ñ <input type="text" readonly="readonly" value="N"></label>
+        <label>O <input type="text" readonly="readonly" value="O"></label>
+        <label>P <input type="text" readonly="readonly" value="P"></label>
+        <label>Q <input type="text" readonly="readonly" value="Q"></label>
+        <label>R <input type="text" readonly="readonly" value="R"></label>
+        <label>S <input type="text" readonly="readonly" value="S"></label>
+        <label>T <input type="text" readonly="readonly" value="T"></label>
+        <label>U <input type="text" readonly="readonly" value="U"></label>
+        <label>V <input type="text" readonly="readonly" value="V"></label>
+        <label>W <input type="text" readonly="readonly" value="W"></label>
+        <label>X <input type="text" readonly="readonly" value="X"></label>
+        <label>Y <input type="text" readonly="readonly" value="Y"></label>
+        <label>Z <input type="text" readonly="readonly" value="Z"></label>
+    </form>
+
+    
+    <form class="Answer">
+        <label>RESPUESTA:</label>
+        
+        <textarea rows="3" id="Answer"></textarea>
+        
+        <center>
+            <input type="button" value="AYUDA" onclick="HelpAlert()">
+            <input type="button" value="ENVIAR" onclick="SendAnswer()">
+            <input type="button" value="RESPUESTA" onclick="AnswerAlert()">
+        </center>
+    </form>
+</body>
+    <script src="./Mission2.js"></script>
+</html>
