@@ -100,3 +100,19 @@ p {
     width: 100%;
     height: 50px;
 }
+
+/* Alfabetos */
+@font-face {
+    font-family: HylianTP;
+    src: url(fonts/advanced-hylian.ttf);
+}
+
+@font-face {
+    font-family: Sheikah;
+    src: url(fonts/sheikah-complete.ttf);
+}
+
+@font-face {
+    font-family: Unown;
+    src: url(fonts/unown.ttf);
+}
