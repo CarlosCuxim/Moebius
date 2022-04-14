@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Experimento 3</title>
+</head>
+<body>
+    <h1>EXPERIMENTO 3</h1>
+
+    <form class="Message">
+        <label>Determine el número:</label>
+        <textarea rows="3" id="Number"></textarea>
+    </form>
+    
+    <form>
+        <label>Determine la base:</label>
+        <select id="Base" onchange='changeBaseEvent(this.value)'>
+            <option value="bin">Binario</option>
+            <option value="oct">Octal</option>
+            <option value="hex">Hexadecimal</option>
+            <option value="Personalizado">Personalizado</option>
+        </select>
+        <input type="number" id="MyBase" style="visibility: hidden" value="10">
+    </form>
+
+    <form class="Answer">
+        <label>RESPUESTA:</label>
+        <textarea rows="3" id="Answer" readonly="readonly"></textarea>
+        
+        <center>
+            <input type="button" value="AYUDA" onclick="HelpAlert()">
+            <input type="button" value="ENVIAR" onclick="SendAnswer()">
+            <input type="button" value="MISIÓN" onclick="AnswerAlert()">
+        </center>
+    </form>
+</body>
+    <script src="./scripts/Experiment4.js"></script>
+</html>
