@@ -86,3 +86,17 @@ p {
 .galacticLetter input{
     font-family: GalacticStandar, Courier, monospace;
 }
+
+.Message {
+    margin-top: 30px;
+}
+
+.Message label {
+    display: block;
+}
+
+.Message textarea {
+    font-family: 'Courier New', Courier, monospace;
+    width: 100%;
+    height: 50px;
+}

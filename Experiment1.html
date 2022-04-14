@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Experimento 1</title>
+</head>
+<body>
+    <h1>EXPERIMENTO 1</h1>
+
+
+    <p>
+        Determine la asignación de letras:
+    </p>
+
+    <form class="LetterAssignment">
+        <label>A <input type="text" value="Q"></label>
+        <label>B <input type="text" value="W"></label>
+        <label>C <input type="text" value="E"></label>
+        <label>D <input type="text" value="R"></label>
+        <label>E <input type="text" value="T"></label>
+        <label>F <input type="text" value="Y"></label>
+        <label>G <input type="text" value="U"></label>
+        <label>H <input type="text" value="I"></label>
+        <label>I <input type="text" value="O"></label>
+        <label>J <input type="text" value="P"></label>
+        <label>K <input type="text" value="A"></label>
+        <label>L <input type="text" value="S"></label>
+        <label>M <input type="text" value="D"></label>
+        <label>N <input type="text" value="F"></label>
+        <label>Ñ <input type="text" value="G"></label>
+        <label>O <input type="text" value="H"></label>
+        <label>P <input type="text" value="J"></label>
+        <label>Q <input type="text" value="K"></label>
+        <label>R <input type="text" value="L"></label>
+        <label>S <input type="text" value="Ñ"></label>
+        <label>T <input type="text" value="Z"></label>
+        <label>U <input type="text" value="X"></label>
+        <label>V <input type="text" value="C"></label>
+        <label>W <input type="text" value="V"></label>
+        <label>X <input type="text" value="B"></label>
+        <label>Y <input type="text" value="N"></label>
+        <label>Z <input type="text" value="M"></label>
+    </form>
+
+    <form class="Message">
+        <label>Determine el mensaje:</label>
+        <textarea rows="3" id="Message"></textarea>
+    </form>
+    
+    <form class="Answer">
+        
+        <label>RESPUESTA:</label>
+        <textarea rows="3" id="Answer" readonly="readonly"></textarea>
+        
+        <center>
+            <input type="button" value="AYUDA" onclick="HelpAlert()">
+            <input type="button" value="ENVIAR" onclick="SendAnswer()">
+            <input type="button" value="MISIÓN" onclick="AnswerAlert()">
+        </center>
+    </form>
+</body>
+    <script src="./Mission1.js"></script>
+</html>
