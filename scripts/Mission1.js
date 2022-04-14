@@ -4,7 +4,7 @@ function SendAnswer(){
     Answer = Answer.toUpperCase()
     Answer = Answer.replace(/\s\s+/g, ' ')
     
-    if(Answer == "ZIRIÑ SIÑ DTFÑQPT RTWTF ÑTL EOYLQRHÑ") {
+    if(Answer == "ZHRHÑ SHÑ DTFÑQPTÑ RTWTF ÑTL EOYLQRHÑ") {
         alert("CORRECTO")
     } else {
         alert("INCORRECTO")
@@ -13,7 +13,7 @@ function SendAnswer(){
 
 
 function AnswerAlert(){
-    alert("La respuesta es: ZIRIÑ SIÑ DTFÑQPT RTWTF ÑTL EOYLQRHÑ")
+    alert("La respuesta es: ZHRHÑ SHÑ DTFÑQPTÑ RTWTF ÑTL EOYLQRHÑ")
 }
 
 function HelpAlert(){

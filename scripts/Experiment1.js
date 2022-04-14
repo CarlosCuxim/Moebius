@@ -1,17 +1,39 @@
+const Alphabet = "ABCDEFGHIJKLMNÑOPQRSTUVWXYZ"
 
+function Cipher(Message){
+
+    let LetterAssignment = new Object()
+
+    for(let i=0; i<Alphabet.length; i++){
+        let L = Alphabet[i]
+
+        LetterAssignment[L] = document.getElementById(L).value
+    }
+
+    Message = Message.trim()
+    Message = Message.toUpperCase()
+    Message = Message.replace(/\s\s+/g, ' ')
+
+    let CypheredMessage = ""
+
+    for(let i=0; i<Message.length; i++){
+        let L = Message[i]
+        if(Alphabet.includes(L)){
+            CypheredMessage = CypheredMessage + LetterAssignment[L]
+        } else {
+            CypheredMessage = CypheredMessage + L
+        }
+    }
+
+    return CypheredMessage
+}
 
 // FUNCIONES DE LOS BOTONES
 function SendAnswer(){
-    let Answer = document.getElementById("Answer").value
-    Answer = Answer.trim()
-    Answer = Answer.toUpperCase()
-    Answer = Answer.replace(/\s\s+/g, ' ')
-    
-    if(Answer == "ZIRIÑ SIÑ DTFÑQPT RTWTF ÑTL EOYLQRHÑ") {
-        alert("CORRECTO")
-    } else {
-        alert("INCORRECTO")
-    }
+    const Message = document.getElementById("Message").value
+    let Answer = document.getElementById("Answer")
+
+    Answer.value = Cipher(Message)
 }
 
 
