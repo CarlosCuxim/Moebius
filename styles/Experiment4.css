@@ -1,0 +1,14 @@
+.BaseContainter {
+    margin-top: 30px;
+}
+
+#Base {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+}
+
+#MyBase {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    width: 75px;
+}
