@@ -3,8 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ESTILOS -->
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./styles/Experiment4.css">
+
+    <!-- SWEET ALERT -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <title>Experimento 4</title>
 </head>
@@ -33,11 +38,11 @@
             <textarea rows="3" id="Answer" readonly="readonly"></textarea>
             
             <center>
-                <input type="button" value="AYUDA" onclick="HelpAlert()">
                 <input type="button" class="SendButton" value="ENVIAR" onclick="SendAnswer()">
-                <input type="button" value="MISIÓN" onclick="AnswerAlert()">
             </center>
         </form>
+
+        <center class="ReturnToMission"><a href="./Mission4.html">Regresar a la misión</a></center>
     </main>
 </body>
     <script src="./scripts/Experiment4.js"></script>
