@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles/fonts.css">
+    <link rel="stylesheet" href="./styles/Experiment2.css">
 
     <title>Experimento 2</title>
 </head>
@@ -11,33 +13,33 @@
     <h1>EXPERIMENTO 2</h1>
 
     <main>
-    <form class="Languaje">
-        <label>Determine el lenguaje:</label>
-        <select id="Languaje">
-            <option value="Unown">Unown</option>
-            <option value="Galactic">Alfabeto galáctico estándar</option>
-            <option value="HylianTP">Hyliano Twilight Princess</option>
-            <option value="Sheikah">Sheikah Ancestral</option>
-        </select>
-    </form>
+        <form class="Languaje">
+            <label>Determine el lenguaje:</label>
+            <select id="Languaje">
+                <option value="Unown">Unown</option>
+                <option value="Galactic">Alfabeto galáctico estándar</option>
+                <option value="HylianTP">Hyliano Twilight Princess</option>
+                <option value="Sheikah">Sheikah Ancestral</option>
+            </select>
+        </form>
 
-    <form class="Message">
-        <label>Determine el mensaje:</label>
-        <textarea rows="3" id="Message"></textarea>
-    </form>
-    
-    <form class="Answer">
+        <form class="Message">
+            <label>Determine el mensaje:</label>
+            <textarea rows="3" id="Message"></textarea>
+        </form>
         
-        <label>RESPUESTA:</label>
-        <textarea rows="3" id="Answer" readonly="readonly"></textarea>
-        
-        <center>
-            <input type="button" value="AYUDA" onclick="HelpAlert()">
-            <input type="button" value="ENVIAR" onclick="SendAnswer()">
-            <input type="button" value="MISIÓN" onclick="AnswerAlert()">
-        </center>
-    </form>
-</main>
+        <form class="Answer">
+            
+            <label>RESPUESTA:</label>
+            <textarea rows="3" id="Answer" readonly="readonly"></textarea>
+            
+            <center>
+                <input type="button" value="AYUDA" onclick="HelpAlert()">
+                <input type="button" class="SendButton" value="ENVIAR" onclick="SendAnswer()">
+                <input type="button" value="MISIÓN" onclick="AnswerAlert()">
+            </center>
+        </form>
+    </main>
 </body>
     <script src="./scripts/Experiment2.js"></script>
 </html>

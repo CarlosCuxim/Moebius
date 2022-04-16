@@ -118,6 +118,8 @@ p {
 
 .Message textarea {
     font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
     width: 99%;
+    resize: vertical;
     height: 50px;
 }
