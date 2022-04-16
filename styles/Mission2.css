@@ -1,0 +1,31 @@
+.LetterAssignment {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 10px;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.LetterAssignment label{
+    font-size: 20px;
+    white-space: nowrap;
+}
+
+.LetterAssignment input[type="text"]{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    width: 25px;
+    text-align: center;
+}
+
+
+.galactic {
+    font-family: GalacticStandar;
+}
+
+.galacticLetter input[type="text"]{
+    font-family: GalacticStandar, Courier, monospace;
+    font-size: 14px;
+}

@@ -1,0 +1,19 @@
+@font-face {
+    font-family: GalacticStandar;
+    src: url(../fonts/standard-galactic-alphabet.ttf);
+}
+
+@font-face {
+    font-family: HylianTP;
+    src: url(../fonts/advanced-hylian.ttf);
+}
+
+@font-face {
+    font-family: Sheikah;
+    src: url(../fonts/sheikah-complete.ttf);
+}
+
+@font-face {
+    font-family: Unown;
+    src: url(../fonts/unown.ttf);
+}

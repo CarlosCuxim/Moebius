@@ -1,5 +1,5 @@
 html {
-    background-color: darkred;
+    background-color: #c11d24;
     background-image: url(img/top-secret-small.png);
     background-repeat: repeat;
 }
@@ -10,12 +10,12 @@ body {
     padding: 50px;
     font-size: 18px;
     font-family: 'Courier New', Courier, monospace;
-    min-width: 500px;
+    min-width: 400px;
     max-width: 800px;
     margin: auto;
     margin-top: 50px;
     margin-bottom: 50px;
-    box-shadow: 10px 10px #333333;
+    box-shadow: 8px 8px #333333;
 }
 
 h1 {
@@ -39,29 +39,20 @@ p {
     text-align: justify;
 }
 
-
+/* Caja de experimento */
 .boxed {
     margin: 50px;
 }
 
 .boxed span {
-    border: 1px solid black;
+    display: inline-block;
+    background-color: #ffe082;
+    box-shadow: 5px 5px #ffa000;
     padding: 15px;
 }
 
 
-.LetterAssignment label{
-    white-space: nowrap;
-    margin-right: 10px;
-    margin-left: 10px;
-    line-height: 30px;
-}
-
-.LetterAssignment input{
-    font-family: 'Courier New', Courier, monospace;
-    width: 25px;
-}
-
+/* Caja respuesta */
 .Answer {
     margin-top: 30px;
 }
@@ -72,16 +63,38 @@ p {
 
 .Answer textarea {
     font-family: 'Courier New', Courier, monospace;
-    width: 100%;
+    font-size: 18px;
+    width: 99%;
+    resize: vertical;
     height: 50px;
 }
 
 .Answer input[type="button"] {
     font-family: 'Courier New', Courier, monospace;
-    width: 100px;
-    margin-left: 20px;
-    margin-right: 20px;
+    font-size: 18px;
+    width: 120px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 10px;
 }
+
+.Answer .SendButton {
+    color: white;
+    font-weight: bold;
+    background-color: #c11d24;
+    border-style: solid;
+    border-width: 1px ;
+    border-radius: 2px;
+}
+
+.Answer .SendButton:hover {
+    background-color: #ff1d24;
+}
+
+.Answer .SendButton:active {
+    background-color: #c11d24;
+}
+
 
 .Answer select{
     font-family: 'Courier New', Courier, monospace;
@@ -91,50 +104,4 @@ p {
     margin-right: 10px;
     margin-top: 10px;
     margin-bottom: 20px;
-}
-
-/* Alfabeto galáctico estándar */
-@font-face {
-    font-family: GalacticStandar;
-    src: url(fonts/standard-galactic-alphabet.ttf);
-}
-
-
-.galactic {
-    font-family: GalacticStandar;
-}
-
-
-.galacticLetter input{
-    font-family: GalacticStandar, Courier, monospace;
-}
-
-.Message {
-    margin-top: 30px;
-}
-
-.Message label {
-    display: block;
-}
-
-.Message textarea {
-    font-family: 'Courier New', Courier, monospace;
-    width: 100%;
-    height: 50px;
-}
-
-/* Alfabetos */
-@font-face {
-    font-family: HylianTP;
-    src: url(fonts/advanced-hylian.ttf);
-}
-
-@font-face {
-    font-family: Sheikah;
-    src: url(fonts/sheikah-complete.ttf);
-}
-
-@font-face {
-    font-family: Unown;
-    src: url(fonts/unown.ttf);
 }
