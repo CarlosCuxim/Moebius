@@ -123,3 +123,9 @@ p {
     resize: vertical;
     height: 50px;
 }
+
+/* REGRESAR A LA MISIÓN */
+
+.ReturnToMission {
+    margin-top: 20px;
+}
