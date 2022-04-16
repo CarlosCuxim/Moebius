@@ -52,7 +52,9 @@ p {
 }
 
 
-/* Caja respuesta */
+
+
+/* CADA DE RESPUESTAS */
 .Answer {
     margin-top: 30px;
 }
@@ -102,4 +104,20 @@ p {
     text-align: center;
     width: 60px;
     margin: 10px;
+}
+
+
+/* CADA DE MENSAJE */
+.Message {
+    margin-top: 30px;
+}
+
+.Message label {
+    display: block;
+}
+
+.Message textarea {
+    font-family: 'Courier New', Courier, monospace;
+    width: 99%;
+    height: 50px;
 }
