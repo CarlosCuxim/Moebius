@@ -27,8 +27,8 @@ function AnswerAlert(){
         text: "Recomiendo intentar el problema primero",
         icon: 'warning',
         showCancelButton: true,
-        confirmButtonColor: '#3085d6',
-        cancelButtonColor: '#d33',
+        //confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#c11d24',
         confirmButtonText: 'Si',
         cancelButtonText: 'Cancelar'
       }).then((result) => {
