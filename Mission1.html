@@ -12,55 +12,63 @@
     <h2>"El cifrado del emperador"</h2>
 
 
-    <p>
-        Usando la siguiente asignación de letras, cifre el siguiente mensaje:
-        <center class="boxed">
-            <span>TODOS LOS MENSAJES DEBEN SER CIFRADOS</span>
-        </center>
-    </p>
+    <main>
+        <p>
+            Usando la siguiente asignación de letras, cifre el siguiente mensaje:
+            <center class="boxed">
+                <span>TODOS LOS MENSAJES DEBEN SER CIFRADOS</span>
+            </center>
+        </p>
 
-    <form class="LetterAssignment">
-        <label>A <input type="text" readonly="readonly" value="Q"></label>
-        <label>B <input type="text" readonly="readonly" value="W"></label>
-        <label>C <input type="text" readonly="readonly" value="E"></label>
-        <label>D <input type="text" readonly="readonly" value="R"></label>
-        <label>E <input type="text" readonly="readonly" value="T"></label>
-        <label>F <input type="text" readonly="readonly" value="Y"></label>
-        <label>G <input type="text" readonly="readonly" value="U"></label>
-        <label>H <input type="text" readonly="readonly" value="I"></label>
-        <label>I <input type="text" readonly="readonly" value="O"></label>
-        <label>J <input type="text" readonly="readonly" value="P"></label>
-        <label>K <input type="text" readonly="readonly" value="A"></label>
-        <label>L <input type="text" readonly="readonly" value="S"></label>
-        <label>M <input type="text" readonly="readonly" value="D"></label>
-        <label>N <input type="text" readonly="readonly" value="F"></label>
-        <label>Ñ <input type="text" readonly="readonly" value="G"></label>
-        <label>O <input type="text" readonly="readonly" value="H"></label>
-        <label>P <input type="text" readonly="readonly" value="J"></label>
-        <label>Q <input type="text" readonly="readonly" value="K"></label>
-        <label>R <input type="text" readonly="readonly" value="L"></label>
-        <label>S <input type="text" readonly="readonly" value="Ñ"></label>
-        <label>T <input type="text" readonly="readonly" value="Z"></label>
-        <label>U <input type="text" readonly="readonly" value="X"></label>
-        <label>V <input type="text" readonly="readonly" value="C"></label>
-        <label>W <input type="text" readonly="readonly" value="V"></label>
-        <label>X <input type="text" readonly="readonly" value="B"></label>
-        <label>Y <input type="text" readonly="readonly" value="N"></label>
-        <label>Z <input type="text" readonly="readonly" value="M"></label>
-    </form>
-
-    
-    <form class="Answer">
-        <label>RESPUESTA:</label>
-        
-        <textarea rows="3" id="Answer"></textarea>
-        
         <center>
-            <input type="button" value="AYUDA" onclick="HelpAlert()">
-            <input type="button" value="ENVIAR" onclick="SendAnswer()">
-            <input type="button" value="RESPUESTA" onclick="AnswerAlert()">
+            <form class="LetterAssignment">
+                <label>A <input type="text" readonly="readonly" value="Q"></label>
+                <label>B <input type="text" readonly="readonly" value="W"></label>
+                <label>C <input type="text" readonly="readonly" value="E"></label>
+                <label>D <input type="text" readonly="readonly" value="R"></label>
+                <label>E <input type="text" readonly="readonly" value="T"></label>
+                <label>F <input type="text" readonly="readonly" value="Y"></label>
+                <label>G <input type="text" readonly="readonly" value="U"></label>
+                <label>H <input type="text" readonly="readonly" value="I"></label>
+                <label>I <input type="text" readonly="readonly" value="O"></label>
+                <label>J <input type="text" readonly="readonly" value="P"></label>
+                <label>K <input type="text" readonly="readonly" value="A"></label>
+                <label>L <input type="text" readonly="readonly" value="S"></label>
+                <label>M <input type="text" readonly="readonly" value="D"></label>
+                <label>N <input type="text" readonly="readonly" value="F"></label>
+                <label>Ñ <input type="text" readonly="readonly" value="G"></label>
+                <label>O <input type="text" readonly="readonly" value="H"></label>
+                <label>P <input type="text" readonly="readonly" value="J"></label>
+                <label>Q <input type="text" readonly="readonly" value="K"></label>
+                <label>R <input type="text" readonly="readonly" value="L"></label>
+                <label>S <input type="text" readonly="readonly" value="Ñ"></label>
+                <label>T <input type="text" readonly="readonly" value="Z"></label>
+                <label>U <input type="text" readonly="readonly" value="X"></label>
+                <label>V <input type="text" readonly="readonly" value="C"></label>
+                <label>W <input type="text" readonly="readonly" value="V"></label>
+                <label>X <input type="text" readonly="readonly" value="B"></label>
+                <label>Y <input type="text" readonly="readonly" value="N"></label>
+                <label>Z <input type="text" readonly="readonly" value="M"></label>
+            </form>
         </center>
-    </form>
+
+        
+        <form class="Answer">
+            <label>RESPUESTA:</label>
+            
+            <textarea rows="3" id="Answer"></textarea>
+            
+            <center>
+                <input type="button" value="AYUDA" onclick="HelpAlert()">
+                <input type="button" value="ENVIAR" onclick="SendAnswer()">
+                <input type="button" value="RESPUESTA" onclick="AnswerAlert()">
+            </center>
+        </form>
+        
+    </main>
+
 </body>
+
     <script src="./scripts/Mission1.js"></script>
+
 </html>

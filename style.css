@@ -1,25 +1,47 @@
+html {
+    background-color: darkred;
+    background-image: url(img/top-secret-small.png);
+    background-repeat: repeat;
+}
+
 body {
+    background-color: white;
+    border-radius: 10px;
     padding: 50px;
+    font-size: 18px;
     font-family: 'Courier New', Courier, monospace;
-    max-width: 600px;
+    min-width: 500px;
+    max-width: 800px;
     margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-shadow: 10px 10px #333333;
 }
 
 h1 {
     text-align: center;
     font-weight: bolder;
+    font-size: 50px;
+    margin: 10px;
 }
 
 h2 {
     text-align: center;
+    font-size: 30px;
+    margin: 10px;
+}
+
+main {
+    margin-top: 35px;
 }
 
 p {
     text-align: justify;
 }
 
+
 .boxed {
-    margin: 30px;
+    margin: 50px;
 }
 
 .boxed span {
