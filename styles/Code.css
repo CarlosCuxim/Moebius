@@ -1,0 +1,97 @@
+html {
+    background-color: black;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    font-family: "Cascadia Code", Consolas, monospace;
+    font-size: 18px;
+    color: #00ff00;
+}
+
+main {
+    border: 5px solid #00ff00;
+    width: 600px;
+    height: 300px;
+}
+
+h1 {
+    text-align: center;
+    margin: 40px;
+}
+
+.codigo {
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+}
+
+.codigo input[type="text"] {
+    color: #00ff00;
+    background-color: black;
+    font-family: "Cascadia Code", Consolas, monospace;
+    font-size: 35px;
+    width: 82px;
+    border: 1px solid  #00ff00;
+}
+
+.SendButton {
+    margin: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* BOTON DE ENVIADO */
+#SendButton{
+    font-family: "Cascadia Code", Consolas, monospace;
+    font-size: 20px;
+}
+
+
+/* COLOR VERDE DEL BOTÓN */
+.GREENBUTTON {
+    background-color: black;
+    color: #00ff00;
+    border: 1px solid  #00ff00;
+}
+
+.GREENBUTTON:hover {
+    background-color: #00ff00;
+    color: black;
+}
+
+.GREENBUTTON:active {
+    background-color: black;
+    color: #00ff00;
+}
+
+/* COLOR ROJO DEL BOTÓN */
+.REDBUTTON {
+    background-color: black;
+    color: red;
+    border: 1px solid  red;
+}
+
+.REDBUTTON:hover {
+    background-color: red;
+    color: black;
+}
+
+.REDBUTTON:active {
+    background-color: black;
+    color: red;
+}
+
+
+/*MENSAJE DE ACCESO*/
+#Acceso {
+    color: red;
+    visibility: hidden;
+}
+

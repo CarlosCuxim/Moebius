@@ -15,7 +15,7 @@ function SendAnswer(){
         Swal.fire({
             icon: 'success',
             title: '¡CORRECTO!',
-            text: 'El código de la misión es: 5678',
+            text: 'El código de la misión es: KB2D',
             footer: '<a href="./Experiment4.html">Experimentar</a>'
           })
     } else {

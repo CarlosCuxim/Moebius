@@ -8,7 +8,7 @@ function SendAnswer(){
         Swal.fire({
             icon: 'success',
             title: '¡CORRECTO!',
-            text: 'El código de la misión es: 1234',
+            text: 'El código de la misión es: WNE0',
             footer: '<a href="./Experiment2.html">Experimentar</a>'
           })
     } else {
