@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles/Mission3.css">
 
     <title>Misión 3</title>
 </head>
@@ -12,27 +13,31 @@
     <h2>"El código del MK-3512"</h2>
 
     <main>
-    <p>
-        Hemos interceptado un mensaje de radio del enemigo. Ya lo hemos puesto a analizar en la
-        super computadora MK-3512, sin embargo su respuesta fue la siguiente
+        <p>
+            Hemos interceptado un mensaje de radio del enemigo. Ya lo hemos puesto a analizar en la
+            super computadora MK-3512, sin embargo su respuesta fue la siguiente
+        </p>
+
         <center class="boxed">
             <span>11111100110</span>
         </center>
-        Su misión será descifrar el número resultante
-    </p>
+        
+        <p>
+            Su misión será descifrar el número resultante.
+        </p>
 
-    
-    <form class="Answer">
-        <label>RESPUESTA:</label>
         
-        <textarea rows="3" id="Answer"></textarea>
-        
-        <center>
-            <input type="button" value="AYUDA" onclick="HelpAlert()">
-            <input type="button" value="ENVIAR" onclick="SendAnswer()">
-            <input type="button" value="RESPUESTA" onclick="AnswerAlert()">
-        </center>
-    </form>
+        <form class="Answer">
+            <label>RESPUESTA:</label>
+            
+            <textarea rows="3" id="Answer"></textarea>
+            
+            <center>
+                <input type="button" value="AYUDA" onclick="HelpAlert()">
+                <input type="button" class="SendButton" value="ENVIAR" onclick="SendAnswer()">
+                <input type="button" value="RESPUESTA" onclick="AnswerAlert()">
+            </center>
+        </form>
     </main>
 </body>
     <script src="./scripts/Mission3.js"></script>
