@@ -1,0 +1,37 @@
+h1 {
+    color: #c11d24;
+}
+
+h2 {
+    font-size: 24px;
+    margin: 50px;
+    margin-bottom: 30px;
+}
+
+header {
+    visibility: hidden;
+}
+
+main {
+    font-size: 24px;
+    visibility: hidden;
+}
+
+.removeBack {
+    background: none;
+    box-shadow: none;
+}
+
+.message {
+    margin: 50px;
+    margin-top: 30px;
+}
+
+.Boss {
+    font-weight: bold;
+}
+
+.BossTitle {
+    font-size: 18px;
+    font-style: italic;
+}

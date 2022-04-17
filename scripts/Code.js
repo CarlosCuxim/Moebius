@@ -59,7 +59,7 @@ function ResetAction() {
 
 /* MOVER A LA PÁGINA DE FELICITACIONES */
 function sendToCongratulationPage() {
-    window.location.href = "./index.html"
+    window.location.href = "./Congratulations.html"
 }
 
 function sendToRickRoll() {
