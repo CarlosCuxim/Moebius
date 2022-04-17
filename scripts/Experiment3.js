@@ -126,12 +126,3 @@ function SendAnswer(){
 
     Answer.value = AnsValue
 }
-
-
-function AnswerAlert(){
-    alert("La respuesta es: ZIRIÑ SIÑ DTFÑQPT RTWTF ÑTL EOYLQRHÑ")
-}
-
-function HelpAlert(){
-    alert("Lo ideal es que aquí se coloque el video de ayuda")
-}
