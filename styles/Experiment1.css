@@ -17,3 +17,9 @@
     width: 25px;
     text-align: center;
 }
+
+.AskCipher {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
