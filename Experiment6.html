@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles/Experiment6.css">
+
+    <title>Experimento 6</title>
+</head>
+<body>
+    <h1>EXPERIMENTO 6</h1>
+
+    <main>
+        <form class="Password">
+            <label>Determine la contraseña:</label>
+            <input type="text" id="Password">
+        </form>
+
+        <form class="Message">
+            <label>Determine el mensaje:</label>
+            <textarea rows="3" id="Message"></textarea>
+        </form>
+        
+        <form class="Answer">
+            
+            <label>RESPUESTA:</label>
+            <textarea rows="3" id="Answer" readonly="readonly"></textarea>
+            
+            <center>
+                <input type="button" class="SendButton" value="ENVIAR" onclick="SendAnswer()">
+            </center>
+        </form>
+    </main>
+</body>
+    <script src="./scripts/Experiment6.js"></script>
+</html>

@@ -1,0 +1,10 @@
+.Password {
+    display: flex;
+}
+
+#Password {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    width: auto;
+    flex: 1;
+}
