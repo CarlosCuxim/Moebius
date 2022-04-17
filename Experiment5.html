@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles/Experiment5.css">
+
+    <title>Experimento 5</title>
+</head>
+<body>
+    <h1>EXPERIMENTO 5</h1>
+
+    <main>
+
+        <form class="Message">
+            <label>Determine el mensaje:</label>
+            <textarea rows="5" id="Message"></textarea>
+
+            <center>
+                <input type="button" value="CALCULAR ESTADÍSTICA" onclick="StatisticsAction()">
+            </center>
+        </form>
+    </form>
+
+    <ul id="LetterStatistics"></ul>
+
+
+
+        <p>
+            Determine la asignación de letras:
+        </p>
+
+        <form class="LetterAssignment">
+            <label>A <input type="text" value="" id="A"></label>
+            <label>B <input type="text" value="" id="B"></label>
+            <label>C <input type="text" value="" id="C"></label>
+            <label>D <input type="text" value="" id="D"></label>
+            <label>E <input type="text" value="" id="E"></label>
+            <label>F <input type="text" value="" id="F"></label>
+            <label>G <input type="text" value="" id="G"></label>
+            <label>H <input type="text" value="" id="H"></label>
+            <label>I <input type="text" value="" id="I"></label>
+            <label>J <input type="text" value="" id="J"></label>
+            <label>K <input type="text" value="" id="K"></label>
+            <label>L <input type="text" value="" id="L"></label>
+            <label>M <input type="text" value="" id="M"></label>
+            <label>N <input type="text" value="" id="N"></label>
+            <label>Ñ <input type="text" value="" id="Ñ"></label>
+            <label>O <input type="text" value="" id="O"></label>
+            <label>P <input type="text" value="" id="P"></label>
+            <label>Q <input type="text" value="" id="Q"></label>
+            <label>R <input type="text" value="" id="R"></label>
+            <label>S <input type="text" value="" id="S"></label>
+            <label>T <input type="text" value="" id="T"></label>
+            <label>U <input type="text" value="" id="U"></label>
+            <label>V <input type="text" value="" id="V"></label>
+            <label>W <input type="text" value="" id="W"></label>
+            <label>X <input type="text" value="" id="X"></label>
+            <label>Y <input type="text" value="" id="Y"></label>
+            <label>Z <input type="text" value="" id="Z"></label>
+        </form>
+
+        
+        
+        <form class="Answer">
+            
+            <label>RESPUESTA:</label>
+            <div id="Answer" readonly="readonly"></div>
+            
+            <center>
+                <input type="button" class="SendButton" value="ENVIAR" onclick="SendAnswer()">
+            </center>
+        </form>
+    </main>
+</body>
+    <script src="./scripts/Experiment5.js"></script>
+</html>

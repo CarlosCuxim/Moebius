@@ -1,8 +1,22 @@
 const Alphabet = "ABCDEFGHIJKLMNÑOPQRSTUVWXYZ"
 
+function CleanMessage(message) {
+    message = message.trim()
+    message = message.toUpperCase()
+    message = message.replace(/\s\s+/g, ' ')
+    message = message.replace(/Á/g, 'A')
+    message = message.replace(/É/g, 'E')
+    message = message.replace(/Í/g, 'I')
+    message = message.replace(/Ó/g, 'O')
+    message = message.replace(/Ú/g, 'U')
+    message = message.replace(/Ü/g, 'U')
+
+    return message
+}
+
 function Cipher(Message){
 
-    let LetterAssignment = new Object()
+    let LetterAssignment = {}
 
     for(let i=0; i<Alphabet.length; i++){
         let L = Alphabet[i]
@@ -10,9 +24,7 @@ function Cipher(Message){
         LetterAssignment[L] = document.getElementById(L).value
     }
 
-    Message = Message.trim()
-    Message = Message.toUpperCase()
-    Message = Message.replace(/\s\s+/g, ' ')
+    Message = CleanMessage(Message)
 
     let CypheredMessage = ""
 
