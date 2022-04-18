@@ -16,18 +16,19 @@
     <main>
         <form class="Password">
             <label>Determine la contraseña:</label>
-            <input type="text" id="Password">
+            <input type="text" id="Password" value="GATO">
+            <span><input type="checkbox" id="INVERSE"><label>Descifrar</label></span>
         </form>
 
         <form class="Message">
             <label>Determine el mensaje:</label>
-            <textarea rows="3" id="Message"></textarea>
+            <textarea rows="3" id="Message">Las matemáticas son divertidas.</textarea>
         </form>
         
         <form class="Answer">
             
             <label>RESPUESTA:</label>
-            <textarea rows="3" id="Answer" readonly="readonly"></textarea>
+            <textarea rows="3" id="Answer" readonly="readonly">QAM AGTXAGTBQGS MDS DBKKRNWJAM.</textarea>
             
             <center>
                 <input type="button" class="SendButton" value="ENVIAR" onclick="SendAnswer()">

@@ -2,3 +2,27 @@
     font-family: 'Courier New', Courier, monospace;
     font-size: 18px;
 }
+
+.Answer textarea {
+    height: 100px;
+}
+
+.GalacticFont {
+    font-family: GalacticStandar !important;
+    font-size: 20px !important;
+}
+
+.HylianFont {
+    font-family: HylianTP !important;
+    font-size: 50px !important;
+}
+
+.SheikahFont {
+    font-family: Sheikah !important;
+    font-size: 20px !important;
+}
+
+.UnownFont {
+    font-family: Unown !important;
+    font-size: 20px !important;
+}

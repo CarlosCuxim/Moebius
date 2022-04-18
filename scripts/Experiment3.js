@@ -1,8 +1,8 @@
-function Cipher(Message){
+function CleanMessage(Message){
 
     Message = Message.trim()
     Message = Message.toUpperCase()
-    Message = Message.replace(/\s\s+/g, '')
+    Message = Message.replace(/\s/g, '')
 
     return Message
 }
@@ -12,12 +12,7 @@ function strToBin(string){
     let V = 0
     for(let i=0; i<n; i++){
         let C = string[i]
-        let b = 0
-        if(C=="0"){
-            b = 0
-        } else {
-            b = 1
-        }
+        let b = parseInt(C)
 
         V = V + 2**(n-1-i) * b
     }
@@ -29,18 +24,7 @@ function strToOct(string){
     let V = 0
     for(let i=0; i<n; i++){
         let C = string[i]
-        let b = 0
-
-        switch(C){
-            case "0": b = 0; break;
-            case "1": b = 1; break;
-            case "2": b = 2; break;
-            case "3": b = 3; break;
-            case "4": b = 4; break;
-            case "5": b = 5; break;
-            case "6": b = 6; break;
-            default: b = 7;
-        }
+        let b = parseInt(C)
 
         V = V + 8**(n-1-i) * b
     }
@@ -55,22 +39,13 @@ function strToHex(string){
         let b = 0
 
         switch(C){
-            case "0": b = 0; break;
-            case "1": b = 1; break;
-            case "2": b = 2; break;
-            case "3": b = 3; break;
-            case "4": b = 4; break;
-            case "5": b = 5; break;
-            case "6": b = 6; break;
-            case "7": b = 7; break;
-            case "8": b = 8; break;
-            case "9": b = 9; break;
             case "A": b = 10; break;
             case "B": b = 11; break;
             case "C": b = 12; break;
             case "D": b = 13; break;
             case "E": b = 14; break;
-            default: b = 15;
+            case "F": b = 15; break;
+            default: b = parseInt(C);
         }
 
         V = V + 16**(n-1-i) * b
@@ -111,7 +86,7 @@ function SendAnswer(){
     let Answer = document.getElementById("Answer")
     let Base = document.getElementById("Base").value
 
-    let AnsValue = Cipher(Message)
+    let AnsValue = CleanMessage(Message)
 
     if(Base=="bin"){
         AnsValue = strToBin(AnsValue)

@@ -1,8 +1,8 @@
-function Cipher(Message){
+function CleanMessage(Message){
 
     Message = Message.trim()
     Message = Message.toUpperCase()
-    Message = Message.replace(/\s\s+/g, '')
+    Message = Message.replace(/\s/g, '')
 
     return Message
 }
@@ -60,7 +60,7 @@ function SendAnswer(){
     let Base = document.getElementById("Base").value
     let MyBase = document.getElementById("MyBase").value
 
-    let AnsValue = Cipher(Message)
+    let AnsValue = CleanMessage(Message)
 
     if(Base == "bin"){
         AnsValue = strToDigits(AnsValue, 2)

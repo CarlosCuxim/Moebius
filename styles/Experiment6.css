@@ -1,5 +1,6 @@
 .Password {
     display: flex;
+    column-gap: 10px;
 }
 
 #Password {
@@ -8,3 +9,4 @@
     width: auto;
     flex: 1;
 }
+

@@ -19,16 +19,24 @@ function CleanMessage(Message){
 
 const Alphabet = "ABCDEFGHIJKLMNÑOPQRSTUVWXYZ"
 
-function RollLetter(L, P){
+function RollLetter(L, P, inverse=false){
     let i = Alphabet.indexOf(L)
-    let p = Alphabet.indexOf(P)
+    let n = Alphabet.length
+    let p = 0
 
-    let NewL = Alphabet[(i+p)%Alphabet.length]
+    if(inverse){
+        p = (n-Alphabet.indexOf(P))%n
+    } else {
+        p = Alphabet.indexOf(P)
+    }
+    
+
+    let NewL = Alphabet[(i+p)%n]
 
     return NewL
 }
 
-function CipherVigenere(message, password){
+function CipherVigenere(message, password, inverse=false){
     let counter = 0
     let S = ""
     
@@ -37,7 +45,7 @@ function CipherVigenere(message, password){
         if(Alphabet.includes(L)){
             
             P = password[counter%password.length]
-            S += RollLetter(L, P)
+            S += RollLetter(L, P, inverse)
             counter++
 
         } else {
@@ -53,11 +61,11 @@ function CipherVigenere(message, password){
 function SendAnswer(){
     const Message = document.getElementById("Message").value
     let Answer = document.getElementById("Answer")
-
     let Password = CleanMessage(document.getElementById("Password").value) || "A"
+    let INVERSE = document.getElementById("INVERSE").checked
 
     let NewMessage = CleanMessage(Message)
-    NewMessage = CipherVigenere(NewMessage, Password)
+    NewMessage = CipherVigenere(NewMessage, Password, INVERSE)
 
     Answer.value = NewMessage
 }

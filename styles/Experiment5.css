@@ -21,6 +21,8 @@
     font-size: 20px;
     width: 25px;
     text-align: center;
+    color: red;
+    font-weight: bold;
 }
 
 .Message textarea {

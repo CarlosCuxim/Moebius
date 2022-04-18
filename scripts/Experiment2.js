@@ -1,38 +1,34 @@
-function Cipher(Message){
+function CleanMessage(message) {
+    message = message.trim()
+    message = message.toUpperCase()
+    message = message.replace(/\s\s+/g, ' ')
+    message = message.replace(/Ñ/g, 'NN')
+    message = message.replace(/[ÁÄ]/g, 'A')
+    message = message.replace(/[ÉË]/g, 'E')
+    message = message.replace(/[ÍÏ]/g, 'I')
+    message = message.replace(/[ÓÖ]/g, 'O')
+    message = message.replace(/[ÚÜ]/g, 'U')
 
-    Message = Message.trim()
-    Message = Message.toUpperCase()
-    Message = Message.replace(/\s\s+/g, ' ')
-    Message = Message.replace(/Ñ/g, 'NN')
-    Message = Message.replace(/Á/g, 'A')
-    Message = Message.replace(/É/g, 'E')
-    Message = Message.replace(/Í/g, 'I')
-    Message = Message.replace(/Ó/g, 'O')
-    Message = Message.replace(/Ú/g, 'U')
-
-    return Message
+    return message
 }
 
 // FUNCIONES DE LOS BOTONES
 function SendAnswer(){
     const Message = document.getElementById("Message").value
     let Answer = document.getElementById("Answer")
-
     let Language = document.getElementById("Languaje").value
 
-    Answer.value = Cipher(Message)
+    Answer.classList.remove("GalacticFont", "HylianFont", "SheikahFont", "UnownFont")
 
     if(Language=="Galactic"){
-        Answer.style.fontFamily = "GalacticStandar"
-        Answer.style.fontSize = "20px"
+        Answer.classList.add("GalacticFont")
     } else if(Language=="HylianTP") {
-        Answer.style.fontFamily = "HylianTP"
-        Answer.style.fontSize = "50px"
+        Answer.classList.add("HylianFont")
     } else if (Language=="Sheikah") {
-        Answer.style.fontFamily = "Sheikah"
-        Answer.style.fontSize = "20px"
+        Answer.classList.add("SheikahFont")
     } else if (Language=="Unown") {
-        Answer.style.fontFamily = "Unown"
-        Answer.style.fontSize = "20px"
+        Answer.classList.add("UnownFont")
     }
+
+    Answer.value = CleanMessage(Message)
 }
