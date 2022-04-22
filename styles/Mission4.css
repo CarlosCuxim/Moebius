@@ -1,4 +1,17 @@
-.boxed span {
-    font-family: Consolas, monospace;
-    font-size: 20px;
+.boxed th {
+    font-size: 16px;
+    text-align: center;
+    transform: rotate(-45deg);
 }
+
+.boxed td {
+    font-family: Consolas, monospace;
+    font-size: 30px;
+    width: 40px;
+    text-align: center;
+}
+
+.boxed td {
+    border: 1px solid;
+    margin: 25px;
+  }

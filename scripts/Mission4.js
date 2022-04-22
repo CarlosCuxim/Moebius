@@ -4,7 +4,7 @@ function SendAnswer(){
     Answer = Answer.toUpperCase()
     Answer = Answer.replace(/\s\s+/g, ' ')
     
-    if(Answer == "2022") {
+    if(Answer == "42") {
         Swal.fire({
             icon: 'success',
             title: '¡CORRECTO!',
@@ -34,7 +34,7 @@ function AnswerAlert(){
       }).then((result) => {
         if (result.isConfirmed) {
           Swal.fire({
-            html: 'La respuesta es:</br>2020',
+            html: 'La respuesta es:</br>42',
             icon: 'warning'
           })
         }
