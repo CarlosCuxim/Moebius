@@ -129,3 +129,8 @@ p {
 .ReturnToMission {
     margin-top: 20px;
 }
+
+
+.consola {
+    font-family: Consolas, monospace;
+}

@@ -1,14 +1,12 @@
 function SendAnswer(){
     let Answer = document.getElementById("Answer").value
-    Answer = Answer.trim()
-    Answer = Answer.toUpperCase()
-    Answer = Answer.replace(/\s\s+/g, ' ')
-    
-    if(Answer == "42") {
+    Answer = parseInt(Answer)
+
+    if(Answer == 42) {
         Swal.fire({
             icon: 'success',
             title: '¡CORRECTO!',
-            text: 'El código de la misión es: KB2D',
+            html: 'El código de la misión es: <b class="consola">KB2D</b>',
             footer: '<a href="./Experiment4.html">Experimentar</a>'
           })
     } else {

@@ -15,7 +15,7 @@ function SendAnswer(){
         Swal.fire({
             icon: 'success',
             title: '¡CORRECTO!',
-            text: 'El código de la misión es: LS3V',
+            html: 'El código de la misión es: <b class="consola">LS3V</b>',
             footer: '<a href="./Experiment3.html">Experimentar</a>'
           })
     } else {

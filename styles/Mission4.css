@@ -1,3 +1,7 @@
+.boxed table {
+    border-spacing: 10px 5px
+}
+
 .boxed th {
     font-size: 16px;
     text-align: center;
@@ -13,5 +17,11 @@
 
 .boxed td {
     border: 1px solid;
-    margin: 25px;
   }
+
+
+.Answer input[type="number"] {
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
