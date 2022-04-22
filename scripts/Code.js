@@ -71,7 +71,7 @@ function sendToRickRoll() {
 
 /* ACCIÓN DEL BOTÓN */
 function ButtonAction(){
-    condition = (code1.value == "D0R1") && (code2.value == "WNE0") && (code3.value == "LS3Ñ") && (code4.value == "KB2D")
+    condition = (code1.value == "D0R1") && (code2.value == "WNE0") && (code3.value == "LS3V") && (code4.value == "KB2D")
     rickRoll = (code1.value == "1") && (code2.value == "2") && (code3.value == "3") && (code4.value == "4")
 
     if(condition===true){

@@ -16,6 +16,8 @@ main {
     border: 5px solid #00ff00;
     width: 600px;
     height: 300px;
+    margin: 25px;
+    min-width: 550px;
 }
 
 h1 {
