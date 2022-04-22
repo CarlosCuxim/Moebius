@@ -1,14 +1,21 @@
 function SendAnswer(){
-    let Answer = document.getElementById("Answer").value
-    Answer = Answer.trim()
-    Answer = Answer.toUpperCase()
-    Answer = Answer.replace(/\s\s+/g, ' ')
+    let Answer1 = document.getElementById("number1").value
+    let Answer2 = document.getElementById("number2").value
+    let Answer3 = document.getElementById("number3").value
+    let Answer4 = document.getElementById("number4").value
     
-    if(Answer == "2022") {
+    let condition = (Answer1=="17")
+    condition = condition && (Answer2=="0")
+    condition = condition && (Answer3=="12")
+    condition = condition && (Answer4=="3")
+    
+    
+
+    if(condition) {
         Swal.fire({
             icon: 'success',
             title: '¡CORRECTO!',
-            text: 'El código de la misión es: LS3Ñ',
+            text: 'El código de la misión es: LS3V',
             footer: '<a href="./Experiment3.html">Experimentar</a>'
           })
     } else {
@@ -34,7 +41,7 @@ function AnswerAlert(){
       }).then((result) => {
         if (result.isConfirmed) {
           Swal.fire({
-            html: 'La respuesta es:</br>2020',
+            html: 'La respuesta es:</br>17, 0, 12, 3',
             icon: 'warning'
           })
         }
@@ -43,10 +50,9 @@ function AnswerAlert(){
 
 function HelpAlert(){
     Swal.fire({
-        html: `<iframe width="560" height="315" src="https://www.youtube.com/embed/f9b0wwhTmeU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        html: `<iframe width="560" height="315" src="https://www.youtube.com/embed/8f0XrY-Id_A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <center>VIDEO DE PRUEBA</center>`,
         width: 700,
         icon: "info"
     })
 }
- 

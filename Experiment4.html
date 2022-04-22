@@ -13,13 +13,9 @@
 <body>
     <h1>EXPERIMENTO 4</h1>
 
+
     <main>
-        <form class="Message">
-            <label>Determine el número:</label>
-            <textarea rows="3" id="Number">151</textarea>
-        </form>
-        
-        <form class="BaseContainter">
+        <form>
             <label>Determine la base:</label>
             <select id="Base" onchange='changeBaseEvent(this.value)'>
                 <option value="bin">Binario</option>
@@ -30,15 +26,20 @@
             <input type="number" id="MyBase" style="visibility: hidden" value="10">
         </form>
 
+        <form class="Message">
+            <label>Determine el número:</label>
+            <textarea rows="3" id="Number">10010111</textarea>
+        </form>
+        
         <form class="Answer">
             <label>RESPUESTA:</label>
-            <textarea rows="3" id="Answer" readonly="readonly">10010111</textarea>
+            <textarea rows="3" id="Answer" readonly="readonly">151</textarea>
             
             <center>
                 <input type="button" class="SendButton" value="ENVIAR" onclick="SendAnswer()">
             </center>
         </form>
-
+    
         <center class="ReturnToMission"><a href="./Mission4.html">Regresar a la misión</a></center>
     </main>
 </body>

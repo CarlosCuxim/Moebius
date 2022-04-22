@@ -4,7 +4,7 @@ function SendAnswer(){
     Answer = Answer.toUpperCase()
     Answer = Answer.replace(/\s\s+/g, ' ')
     
-    if(Answer == "LOS GATOS SON BONITOS") {
+    if(Answer == "ZHRHV SHV DTFVQPTV RTWTF VTL EOYLQRHV") {
         Swal.fire({
             icon: 'success',
             title: '¡CORRECTO!',
@@ -34,7 +34,7 @@ function AnswerAlert(){
       }).then((result) => {
         if (result.isConfirmed) {
           Swal.fire({
-            html: 'La respuesta es:</br>LOS GATOS SON BONITOS',
+            html: 'La respuesta es:</br>ZHRHV SHV DTFVQPTV RTWTF VTL EOYLQRHV',
             icon: 'warning'
           })
         }

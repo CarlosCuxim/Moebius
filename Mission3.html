@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Estilos -->
+    
+    <!-- ESTILOS -->
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./styles/Mission3.css">
 
     <!-- SWEET ALERT -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -15,27 +14,117 @@
 </head>
 <body>
     <h1>MISIÓN 3</h1>
-    <h2>"El código del MK-3512"</h2>
+    <h2>"Las tablillas mayas"</h2>
 
     <main>
         <p>
-            Hemos interceptado un mensaje de radio del enemigo. Ya lo hemos puesto a analizar en la
-            super computadora MK-3512, sin embargo su respuesta fue la siguiente
+            Durante las excavaciones en una ruinas mayas hemos encontrado el siguiente mensaje:
         </p>
-
         <center class="boxed">
-            <span>11111100110</span>
+            <span>
+                <img src="./img/Maya17.svg">
+                <img src="./img/Maya0.svg">
+                <img src="./img/Maya12.svg">
+                <img src="./img/Maya3.svg">
+            </span>
         </center>
-        
         <p>
-            Su misión será descifrar el número resultante.
+            Necesitamos que descifre el número.
         </p>
 
-        
         <form class="Answer">
             <label>RESPUESTA:</label>
             
-            <textarea rows="3" id="Answer"></textarea>
+            <center>
+                <select id="number1">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                </select>
+                <select id="number2">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                </select>
+                <select id="number3">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                </select>
+                <select id="number4">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                </select>   
+            </center>
             
             <center>
                 <input type="button" value="AYUDA" onclick="HelpAlert()">

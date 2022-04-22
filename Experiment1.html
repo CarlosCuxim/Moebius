@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- ESTILOS -->
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles/fonts.css">
     <link rel="stylesheet" href="./styles/Experiment1.css">
 
     <title>Experimento 1</title>
@@ -14,50 +15,25 @@
     <h1>EXPERIMENTO 1</h1>
 
     <main>
-        <form class="AskCipher">
-            <label>Determine la asignación de letras:</label>
-            <span><input type="checkbox" id="INVERSE"><label>Descifrar</label></span>
-        </form>
-
-        <form class="LetterAssignment">
-            <label>A <input type="text" value="Q" id="A"></label>
-            <label>B <input type="text" value="W" id="B"></label>
-            <label>C <input type="text" value="E" id="C"></label>
-            <label>D <input type="text" value="R" id="D"></label>
-            <label>E <input type="text" value="T" id="E"></label>
-            <label>F <input type="text" value="Y" id="F"></label>
-            <label>G <input type="text" value="U" id="G"></label>
-            <label>H <input type="text" value="I" id="H"></label>
-            <label>I <input type="text" value="O" id="I"></label>
-            <label>J <input type="text" value="P" id="J"></label>
-            <label>K <input type="text" value="A" id="K"></label>
-            <label>L <input type="text" value="S" id="L"></label>
-            <label>M <input type="text" value="D" id="M"></label>
-            <label>N <input type="text" value="F" id="N"></label>
-            <label>Ñ <input type="text" value="G" id="Ñ"></label>
-            <label>O <input type="text" value="H" id="O"></label>
-            <label>P <input type="text" value="J" id="P"></label>
-            <label>Q <input type="text" value="K" id="Q"></label>
-            <label>R <input type="text" value="L" id="R"></label>
-            <label>S <input type="text" value="V" id="S"></label>
-            <label>T <input type="text" value="Z" id="T"></label>
-            <label>U <input type="text" value="X" id="U"></label>
-            <label>V <input type="text" value="C" id="V"></label>
-            <label>W <input type="text" value="Ñ" id="W"></label>
-            <label>X <input type="text" value="B" id="X"></label>
-            <label>Y <input type="text" value="N" id="Y"></label>
-            <label>Z <input type="text" value="M" id="Z"></label>
+        <form class="Languaje">
+            <label>Determine el lenguaje:</label>
+            <select id="Languaje">
+                <option value="Galactic">Alfabeto galáctico estándar</option>
+                <option value="HylianTP">Hyliano Twilight Princess</option>
+                <option value="Sheikah">Sheikah Ancestral</option>
+                <option value="Unown">Unown</option>
+            </select>
         </form>
 
         <form class="Message">
             <label>Determine el mensaje:</label>
-            <textarea rows="3" id="Message">Las matemáticas son divertidas.</textarea>
+            <textarea rows="3" id="Message">Hola mundo.</textarea>
         </form>
         
         <form class="Answer">
             
             <label>RESPUESTA:</label>
-            <textarea rows="3" id="Answer" readonly="readonly">SQV DQZTDQZOEQV VHF ROCTLZORQV.</textarea>
+            <textarea rows="5" class="GalacticFont" id="Answer" readonly="readonly">HOLA MUNDO.</textarea>
             
             <center>
                 <input type="button" class="SendButton" value="ENVIAR" onclick="SendAnswer()">

@@ -7,38 +7,65 @@ function CleanMessage(Message){
     return Message
 }
 
-
-function strToDigits(string, base){
-    let List = []
-    let n = parseInt(string)
-
-    while(n>0){
-        d = n%base
-        List.unshift(d)
-        n = (n-d)/base
-    }
-
-    return List
-}
-
-function listToBOH(list){
-    let n = list.length
-    let S = ""
+function strToBin(string){
+    let n = string.length
+    let V = 0
     for(let i=0; i<n; i++){
-        let C = list[i]
-        switch(C){
-            case 10: S+= "A"; break;
-            case 11: S+= "B"; break;
-            case 12: S+= "C"; break;
-            case 13: S+= "D"; break;
-            case 14: S+= "E"; break;
-            case 15: S+= "F"; break;
-            default: S+= String(C)
-        }
+        let C = string[i]
+        let b = parseInt(C)
+
+        V = V + 2**(n-1-i) * b
     }
-    return S
+    return V
 }
 
+function strToOct(string){
+    let n = string.length
+    let V = 0
+    for(let i=0; i<n; i++){
+        let C = string[i]
+        let b = parseInt(C)
+
+        V = V + 8**(n-1-i) * b
+    }
+    return V
+}
+
+function strToHex(string){
+    let n = string.length
+    let V = 0
+    for(let i=0; i<n; i++){
+        let C = string[i]
+        let b = 0
+
+        switch(C){
+            case "A": b = 10; break;
+            case "B": b = 11; break;
+            case "C": b = 12; break;
+            case "D": b = 13; break;
+            case "E": b = 14; break;
+            case "F": b = 15; break;
+            default: b = parseInt(C);
+        }
+
+        V = V + 16**(n-1-i) * b
+    }
+    return V
+}
+
+function strToNumber(string, base, sep){
+    let List = string.split(sep)
+    let n = List.length
+    let V = 0
+    for(let i=0; i<n; i++){
+        C = List[i]
+        b = parseInt(C)
+
+        V = V + base**(n-1-i) * b
+    }
+
+    return V
+}
 
 
 function changeBaseEvent(value) {
@@ -58,22 +85,18 @@ function SendAnswer(){
     const Message = document.getElementById("Number").value
     let Answer = document.getElementById("Answer")
     let Base = document.getElementById("Base").value
-    let MyBase = document.getElementById("MyBase").value
 
     let AnsValue = CleanMessage(Message)
 
-    if(Base == "bin"){
-        AnsValue = strToDigits(AnsValue, 2)
-        AnsValue = listToBOH(AnsValue)
-    } else if(Base == "oct") {
-        AnsValue = strToDigits(AnsValue, 8)
-        AnsValue = listToBOH(AnsValue)
-    } else if(Base == "hex") {
-        AnsValue = strToDigits(AnsValue, 16)
-        AnsValue = listToBOH(AnsValue)
+    if(Base=="bin"){
+        AnsValue = strToBin(AnsValue)
+    } else if(Base=="oct"){
+        AnsValue = strToOct(AnsValue)
+    } else if(Base=="hex"){
+        AnsValue = strToHex(AnsValue)
     } else {
-        AnsValue = strToDigits(AnsValue, MyBase)
-        AnsValue = AnsValue.toString()
+        let MyBase = parseInt(document.getElementById("MyBase").value)
+        AnsValue = strToNumber(AnsValue, MyBase, ",")
     }
 
     Answer.value = AnsValue

@@ -1,28 +1,25 @@
-#Languaje {
+.LetterAssignment {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 10px;
+    justify-content: center;
+}
+
+.LetterAssignment label{
+    font-size: 20px;
+    white-space: nowrap;
+}
+
+.LetterAssignment input[type="text"]{
     font-family: 'Courier New', Courier, monospace;
-    font-size: 18px;
+    font-size: 20px;
+    width: 25px;
+    text-align: center;
 }
 
-.Answer textarea {
-    height: 100px;
-}
-
-.GalacticFont {
-    font-family: GalacticStandar !important;
-    font-size: 20px !important;
-}
-
-.HylianFont {
-    font-family: HylianTP !important;
-    font-size: 50px !important;
-}
-
-.SheikahFont {
-    font-family: Sheikah !important;
-    font-size: 20px !important;
-}
-
-.UnownFont {
-    font-family: Unown !important;
-    font-size: 20px !important;
+.AskCipher {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
 }

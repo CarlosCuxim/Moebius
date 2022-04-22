@@ -17,12 +17,3 @@
     width: 25px;
     text-align: center;
 }
-
-.galactic {
-    font-family: GalacticStandar;
-}
-
-.galacticLetter input[type="text"]{
-    font-family: GalacticStandar, Courier, monospace;
-    font-size: 14px;
-}
